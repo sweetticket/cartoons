@@ -1,0 +1,21 @@
+Hey Arnold!|Nickelodeon|1996|No
+Arthur|PBS Kids|1996|Yes
+SpongeBob SquarePants|Nickelodeon|1999|Yes
+The Marvelous Misadventures of FlapJack|Cartoon Network|2008|No
+Adventure Time|Cartoon Network|2010|Yes
+Invader Zim|Cartoon Network|2001|No
+Dora the Explorer|Nickelodeon|2000|Yes
+Rugrats|Nickelodeon|1991|No
+The Wild Thornberrys|Nickelodeon|1998|No
+The Fairly OddParents|Cartoon Network|2001|Yes
+The Grim Adventures of Billy and Mandy|Cartoon Network|2003|No
+Courage the Cowardly Dog|Cartoon Network|1999|No
+Dexter’s Laboratory|Cartoon Network|1996|No
+Powerpuff Girls|Cartoon Network|1998|No
+Avatar: The Last Airbender|Nickelodeon|2005|No
+Dragon Tales|PBS Kids|1999|No
+Caillou|PBS Kids|1997|No
+Oswald|Nickelodeon|2001|No
+Phineas and Ferb|Disney Channel|2007|Yes
+Curious George|PBS Kids|2006|Yes
+Ed, Edd, n Eddy|Cartoon Network|1999|No

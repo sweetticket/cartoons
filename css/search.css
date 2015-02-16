@@ -1,0 +1,59 @@
+.label {
+    font-size: 30px;
+    font-family: CanterLight;
+    position: relative;
+    top: -2px;
+}
+
+.choice {
+    outline-width: 0;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.choice:active, .choice:checked:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.choice:checked:after{
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: #99a1a7;
+}
+
+.choice:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+
+#wrapper {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-height: 900px;
+    background-image: url("../img/cn-bg-tile.png");
+    padding-bottom: 1000px;
+}
+
+#data_container {
+    font-family: CanterLight;
+    font-size: 40px;
+    width: 85%;
+    padding-top: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 950px;
+}

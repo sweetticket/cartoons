@@ -1,0 +1,267 @@
+/* fonts */
+@font-face {
+	font-family: Borg;
+	src: url("../fonts/Borg.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Sunn;
+	src: url("../fonts/Sunn.otf") format("opentype");
+}
+
+@font-face {
+	font-family: CanterBold3D;
+	src: url("../fonts/CanterBold3D.otf") format("opentype");
+}
+
+@font-face {
+	font-family: CanterBoldShadow;
+	src: url("../fonts/CanterBoldShadow.otf") format("opentype");
+}
+
+@font-face {
+	font-family: CanterBoldStrips;
+	src: url("../fonts/CanterBoldStrips.otf") format("opentype");
+}
+
+@font-face {
+	font-family: CanterBold;
+	src: url("../fonts/CanterBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: CanterLight;
+	src: url("../fonts/CanterLight.otf") format("opentype");
+}
+
+@font-face {
+	font-family: CanterOutline;
+	src: url("../fonts/CanterOutline.otf") format("opentype");
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    right: 40px;
+    top: 80px;
+    z-index: 3;
+}
+
+nav li {
+    width: 150px;
+    height: 70px;
+    padding-top: 18%;
+    font-size: 50px;
+    text-align: center;
+    list-style: none;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+#to_top {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: #fff;
+    padding: 17px;
+    border-radius: 25px;
+    font-family: Tahoma;
+    font-size: 20px;
+    color: #000;
+
+}
+
+#to_top a:link , #to_top a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+#to_top a:hover {
+    color: #49DED3;
+}
+
+.nav_link:link, .nav_link:visited {
+    text-decoration: none;
+    font-family: CanterBold3D;
+    color: #000;
+}
+
+.nav_link:hover, .nav_link:active {
+    font-family: CanterBoldStrips;
+    color: #000;
+}
+
+#wrapper {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-height: 900px;
+    background-image: url("../img/cn-bg-tile.png");
+    padding-bottom: 300px;
+}
+
+#data_container {
+    font-family: CanterLight;
+    font-size: 40px;
+    width: 85%;
+    padding-top: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 250px;
+}
+
+.item {
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+#form_container {
+    font-family: CanterBold;
+    font-size: 35px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    padding-left: 60px;
+    margin: 0 auto;
+    width: 70%;
+    margin-left: 40px;
+    z-index: 1;
+    position: absolute;
+    top: 290px;
+}
+
+h1 {
+    font-family: CanterBold3D;
+    font-size: 140px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 50px; 
+}
+
+input[type="text"] {
+    padding: 7px;
+    font-size: 20px;
+    margin-left: 15px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    border-radius: 5px;
+
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+    outline-width: 0;
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+select {
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   border: 1px solid #ccc;
+   font-size: 20px;
+   height: 34px;
+   width: 268px;
+   outline-width: 0;
+    -webkit-appearance: none;
+    background-color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.label {
+    font-family: CanterBold;
+    
+}
+
+.choice_radio {
+    outline-width: 0;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.choice_radio:checked:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    background: #99a1a7;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: 0px;
+    left:3px;
+    font-size: 32px;
+}
+
+.choice_radio:checked {
+	background-color: #e9ecee;
+	color: #99a1a7;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.choice_radio:active, .choice_radio:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+#submit {
+    outline-width: 0;
+    border: 0;
+    border-radius: 50px;
+    width: 170px;
+    height: 90px;
+    font-family: CanterBold;
+    font-size: 50px;
+    padding: 15px;
+    background: #7F7F7F;
+    color: #fff;
+}
+
+#submit:link, #submit:visited {
+    text-decoration: none;
+    font-family: CanterBold3D;
+    color: #fff;
+}
+
+#submit:hover, #submit:active {
+    font-family: CanterBoldStrips;
+    background-color: #45D4CA;
+    cursor: pointer;
+}
+
+.error_msg {
+    color: rgb(255, 0, 0);
+    font-family: Tahoma;
+    font-size: 20px;
+}
+
+.success_msg {
+    color: #009933;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+
+#submission {
+    font-family: CanterLight;
+    font-size: 40px;
+}
