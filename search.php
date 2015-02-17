@@ -18,6 +18,8 @@
                     return true;
             }
         }
+        
+        
     </script>
 </head>
 
@@ -28,9 +30,8 @@
 <div id="wrapper">
     <?php include('template/header.php'); ?>
 <div id="form_container">
-    <p class="search_msg"></p>
     <h2>Search for a Cartoon</h2>
-<form name="search_form" action="search.php" method="post" onSubmit="return validate();">
+<form id="search_form" name="search_form" action="search.php" method="post" onSubmit="return validate();">
     <p>Keyword(s): <input type="text" name="keywords"></p>
     <p>Channel:<br>
                 <input class="channel choice" type="checkbox" name="channel[]" value='Nickelodeon'><span class="channel label"> Nickelodeon</span><br>
@@ -103,18 +104,13 @@
         }
     echo '</ul>';
   };
+  if ($counter == 0){
+    echo '<div id="search_msg"><p class="error_msg">No matches for your search.</p></div>';
+  }
   ?>
 
   </div>
 </div>
 </body>
 <script src="js/display_data.js"></script>
-<script>
-    var count = $("#matches").children().length;
-    if (count == 0) {
-        $(".search_msg").text("No matches for your search.").addClass("error_msg");
-    }else{
-        $(".search_msg").text("Your search results are displayed below.").addClass("success_msg");
-    }
-</script>
 </html>

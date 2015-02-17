@@ -57,3 +57,16 @@
     position: absolute;
     top: 950px;
 }
+
+.label {
+    font-family: CanterBold;
+    font-size: 40px;
+}
+
+#search_msg {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 85%;
+    padding: 30px;
+    margin-left: 10px;
+
+}
