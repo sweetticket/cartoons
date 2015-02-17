@@ -50,8 +50,8 @@
   <div id="data_container">
   <?php
   if(isset($_POST['submit'])){
-        $keywords = [];
-        $channels = [];
+        $keywords = array();
+        $channels = array();
         $year = "";
         $airing = "";
         if (isset($_POST['keywords'])){ $keywords = explode(' ', htmlspecialchars(trim($_POST['keywords']))); };
@@ -103,14 +103,14 @@
         }
         }
     echo '</ul>';
-  };
   if ($counter == 0){
     echo '<div id="search_msg"><p class="error_msg">No matches for your search.</p></div>';
   }
+  };
   ?>
 
   </div>
 </div>
-</body>
 <script src="js/display_data.js"></script>
+</body>
 </html>

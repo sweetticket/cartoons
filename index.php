@@ -33,6 +33,6 @@
       ?>
     </div>
 </div>
-</body>
 <script src="js/display_data.js"></script>
+</body>
 </html>
