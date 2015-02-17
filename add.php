@@ -105,8 +105,8 @@ if(isset($_POST['submit'])){
     </p>
     <p>First Aired (year): <input type="text" name="year" required onChange="validYearAdd(this.value);"><span id="year_msg" class="error_msg"></span></p>
     <p>Still Airing (new episodes)?<br>
-        <input type="radio" class="choice_radio" name="airing" value="Yes"><span class="label" required> Yes</span>
-        <input type="radio" class="choice_radio" name="airing" value="No"><span class="label" required> No</span>
+        <input type="radio" class="choice_radio" name="airing" value="Yes" required><span class="label"> Yes</span>
+        <input type="radio" class="choice_radio" name="airing" value="No"><span class="label"> No</span>
     </p>
     <input type="submit" value="Add" name="submit" id="submit"><span id="submit_msg" class="error_msg"></span>
 </form>
