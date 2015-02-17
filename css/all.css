@@ -1,15 +1,5 @@
 /* fonts */
 @font-face {
-	font-family: Borg;
-	src: url("../fonts/Borg.ttf") format("opentype");
-}
-
-@font-face {
-	font-family: Sunn;
-	src: url("../fonts/Sunn.otf") format("opentype");
-}
-
-@font-face {
 	font-family: CanterBold3D;
 	src: url("../fonts/CanterBold3D.otf") format("opentype");
 }
